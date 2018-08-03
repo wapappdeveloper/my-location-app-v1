@@ -1,0 +1,194 @@
+[
+    {
+        "Listing": {
+            "ID": 123,
+            "Type": "Exclusive",
+            "Transaction": "Sale",
+            "Price": 1000000,
+            "OpenHouses": [
+                {
+                    "Date": "15/10/2020",
+                    "StartTime": "8:00",
+                    "EndTime": "14:00"
+                },
+                {
+                    "Date": "14/10/2020",
+                    "StartTime": "9:00",
+                    "EndTime": "15:00"
+                },
+                {
+                    "Date": "15/10/2010",
+                    "StartTime": "8:00",
+                    "EndTime": "14:00"
+                }
+            ]
+        },
+        "Property": {
+            "Address": {
+                "StreetNumber": 660,
+                "StreetName": "Madison Avenue",
+                "City": "New York"
+            }
+        }
+    },
+    {
+        "Listing": {
+            "ID": 124,
+            "Type": "Open",
+            "Transaction": "Rent",
+            "Price": 10000,
+            "OpenHouses": [
+                {
+                    "Date": "15/10/2020",
+                    "StartTime": "8:00",
+                    "EndTime": "14:00"
+                },
+                {
+                    "Date": "14/10/2020",
+                    "StartTime": "9:00",
+                    "EndTime": "15:00"
+                },
+                {
+                    "Date": "15/10/2010",
+                    "StartTime": "8:00",
+                    "EndTime": "14:00"
+                }
+            ]
+        },
+        "Property": {
+            "Address": {
+                "StreetNumber": 860,
+                "StreetName": "Madison Avenue",
+                "City": "New York"
+            }
+        }
+    },
+    {
+        "Listing": {
+            "ID": 125,
+            "Type": "Open",
+            "Transaction": "Rent",
+            "Price": 20000,
+            "OpenHouses": [
+                {
+                    "Date": "16/10/2020",
+                    "StartTime": "8:00",
+                    "EndTime": "14:00"
+                },
+                {
+                    "Date": "14/10/2020",
+                    "StartTime": "9:00",
+                    "EndTime": "15:00"
+                },
+                {
+                    "Date": "15/10/2010",
+                    "StartTime": "8:00",
+                    "EndTime": "14:00"
+                }
+            ]
+        },
+        "Property": {
+            "Address": {
+                "StreetNumber": 460,
+                "StreetName": "Madison Avenue",
+                "City": "New York"
+            }
+        }
+    },
+    {
+        "Listing": {
+            "ID": 126,
+            "Type": "Open",
+            "Transaction": "Rent",
+            "Price": 23000,
+            "OpenHouses": [
+                {
+                    "Date": "16/10/2020",
+                    "StartTime": "9:00",
+                    "EndTime": "16:00"
+                },
+                {
+                    "Date": "14/10/2020",
+                    "StartTime": "9:00",
+                    "EndTime": "15:00"
+                },
+                {
+                    "Date": "15/10/2010",
+                    "StartTime": "8:00",
+                    "EndTime": "14:00"
+                }
+            ]
+        },
+        "Property": {
+            "Address": {
+                "StreetNumber": 366,
+                "StreetName": "Madison Avenue",
+                "City": "New York"
+            }
+        }
+    },
+    {
+        "Listing": {
+            "ID": 127,
+            "Type": "Open",
+            "Transaction": "Sale",
+            "Price": 2300000,
+            "OpenHouses": [
+                {
+                    "Date": "01/10/2020",
+                    "StartTime": "10:00",
+                    "EndTime": "11:00"
+                },
+                {
+                    "Date": "14/10/2020",
+                    "StartTime": "9:00",
+                    "EndTime": "15:00"
+                },
+                {
+                    "Date": "15/10/2010",
+                    "StartTime": "8:00",
+                    "EndTime": "14:00"
+                }
+            ]
+        },
+        "Property": {
+            "Address": {
+                "StreetNumber": 176,
+                "StreetName": "Madison Avenue",
+                "City": "New York"
+            }
+        }
+    },
+    {
+        "Listing": {
+            "ID": 127,
+            "Type": "Open",
+            "Transaction": "Sale",
+            "Price": 2700000,
+            "OpenHouses": [
+                {
+                    "Date": "05/10/2020",
+                    "StartTime": "11:00",
+                    "EndTime": "16:00"
+                },
+                {
+                    "Date": "14/10/2020",
+                    "StartTime": "9:00",
+                    "EndTime": "15:00"
+                },
+                {
+                    "Date": "15/10/2010",
+                    "StartTime": "8:00",
+                    "EndTime": "14:00"
+                }
+            ]
+        },
+        "Property": {
+            "Address": {
+                "StreetNumber": 226,
+                "StreetName": "Madison Avenue",
+                "City": "New York"
+            }
+        }
+    }
+]

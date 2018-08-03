@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="holder">
+    <h1 class="header">Hilight Location</h1>
+    <hr/>
+    <div class="list-container">
+      <div class="list-holder">
+        <div class="list shadow-very-light" *ngFor="let data of dataList;let i=index" id="{{i+1}}" [class.shadow-very-light]="!data.hilight"
+          [class.hilight]="data.hilight">
+          <hr/>
+          <div class="left-align">{{data.Property.Address.StreetNumber+', '+data.Property.Address.StreetName+', '+data.Property.Address.City+'.'}}
+          </div>
+          <div class="right-align">{{convertDoller(data.Listing.Price, data.Listing.Transaction)}}</div>
+          <div>{{data.Listing.Transaction}}</div>
+          <div>{{getLatestDat(data.Listing.OpenHouses)}}</div>
+          <div class="locate-in-map shadow-light" (click)="hilightOnMap(i)" (touchend)="hilightOnMap(i)">{{i+1}}</div>
+          <span class="button-right-text">click me to know the location</span>
+        </div>
+        <div class="gap-"></div>
+      </div>
+    </div>
+    <hr/>
+    <div class="map-holder shadow-light">
+      <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" [zoomControl]="true">
+
+        <agm-marker *ngFor="let m of markers; let i = index" (markerClick)="clickedMarker(m, m.label, i)" [latitude]="m.lat" [longitude]="m.lng"
+          [iconUrl]="m.icon" [opacity]="m.opacity" [label]="m.label" [zIndex]="m.zIndex" [markerDraggable]="m.draggable" [class.hilight]="m.hilight">
+
+          <agm-info-window>
+            <strong>{{m.info}}</strong>
+          </agm-info-window>
+
+        </agm-marker>
+
+        <agm-circle [latitude]="lat + 0.3" [longitude]="lng" [radius]="5000" [fillColor]="'red'" [circleDraggable]="true" [editable]="true">
+        </agm-circle>
+
+      </agm-map>
+      <div class="map-loader-container" *ngIf="mapLoading">
+        <div class="loader-holder">
+          <div class="loader shadow">Loading</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="loader-container" *ngIf="loading">
+  <div class="loader-holder">
+    <div class="loader shadow">Loading</div>
+  </div>
+</div>
